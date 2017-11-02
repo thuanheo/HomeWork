@@ -1,4 +1,6 @@
 .header {
     background: #ccc;
     color: red;
+    display: flex;
+    justify-content: columns;
 }
