@@ -1,0 +1,21 @@
+<%= link_to "new", new_wedding_dress_path %>
+
+<table>
+    <th>
+        <tr>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Color</th>
+        </tr>
+    </th>
+    <tbody>
+        <% @weddingdress.each do |w| %>
+        <tr>
+            <td><%= w.name %></td>
+            <td><%= w.size%></td>
+            <td><%= w.color%></td>
+            <td> <%= link_to "show", wedding_dress_path(w.id) %> </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
